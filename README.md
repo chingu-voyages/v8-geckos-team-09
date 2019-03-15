@@ -1,10 +1,14 @@
 # v8-geckos-team-09
 Add-project-description-here | Voyage-8 | https://chingu.io/
 
-### Team Member Tests
+### Team Goals
 
-1. Max Test
+1. Build as a unit - Communication and Collaboration
 
-2. Hassan Test
+2. Learn and implement React
 
-3. Dan Test
+3. Apply Test Driven Development
+
+### Tech Stack
+
+HTML/CSS/JavaScript/React
