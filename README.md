@@ -12,3 +12,8 @@ Add-project-description-here | Voyage-8 | https://chingu.io/
 ### Tech Stack
 
 HTML/CSS/JavaScript/React
+
+### Project Ideas
+
+1. Productivity Tool
+2. Book App
