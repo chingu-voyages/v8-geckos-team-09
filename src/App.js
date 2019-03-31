@@ -41,7 +41,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className='clock-container'>
-          <h3 className='clock-text'>{days[this.state.day]}, {months[this.state.month]} {this.state.date}, {this.state.year} {this.state.time}</h3>
+          <h2 className='clock-time'>{this.state.time}</h2>
+          <h3 className='clock-date'>{days[this.state.day]}, {months[this.state.month]} {this.state.date}, {this.state.year}</h3>
         </div>
         <Todos />
         <Quote />

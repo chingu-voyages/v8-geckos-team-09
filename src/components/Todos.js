@@ -8,25 +8,10 @@ class Todos extends React.Component {
         super(props);
     
         this.state = {
-            todos: [
-                {
-                    id: 1,
-                    text: "Take out the trash",
-                    completed: true
-                },
-                {
-                    id: 2,
-                    text: "Grocery shopping",
-                    completed: false
-                },
-                {
-                    id: 3,
-                    text: "Clean gecko tank",
-                    completed: false
-                }
-            ]
+            todos: []
         }
         this.handleChange = this.handleChange.bind(this)
+        this.addTodo = this.addTodo.bind(this)
     }
 
     handleChange(id) {
@@ -44,7 +29,21 @@ class Todos extends React.Component {
     }
 
     addTodo(event) {
-        console.log(event.target.value)
+        event.preventDefault();
+
+        const newTodos = [...this.state.todos];
+
+        newTodos.push({
+            id: this.state.todos.length + 1,
+            text: this.refs.search.value,
+            completed: false
+        });
+
+        this.setState({
+            todos : newTodos
+        });
+
+        this.refs.search.value = ''
     }
     
     render(){
@@ -54,7 +53,7 @@ class Todos extends React.Component {
         return(
             <div className='todos-container'>
                 <form onSubmit={this.addTodo}>
-                    <input placeholder="add todo..."></input>
+                    <input type="text" ref="search" placeholder="add todo..."></input>
                     <button>Submit</button>
                 </form>
                 {todoItems}
