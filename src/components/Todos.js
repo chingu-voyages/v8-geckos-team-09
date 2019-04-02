@@ -12,6 +12,7 @@ class Todos extends React.Component {
         }
         this.handleChange = this.handleChange.bind(this)
         this.addTodo = this.addTodo.bind(this)
+        this.deleteTodo = this.deleteTodo.bind(this)
     }
 
     handleChange(id) {
@@ -45,10 +46,16 @@ class Todos extends React.Component {
 
         this.refs.search.value = ''
     }
+
+    deleteTodo(id) {
+        this.setState({
+            todos: this.state.todos.filter(todo => todo.id !== id)
+        })
+    }
     
     render(){
 
-        const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} handleChange={this.handleChange}/>)
+        const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} handleChange={this.handleChange} deleteTodo={this.deleteTodo}/>)
 
         return(
             <div className='todos-container'>

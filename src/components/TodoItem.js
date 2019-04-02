@@ -14,6 +14,11 @@ function TodoItem(props) {
                 onChange={() => props.handleChange(props.item.id)}
             />
             <p style={props.item.completed ? completedStyle: null}>{props.item.text}</p>
+            <button
+                onClick={() => props.deleteTodo(props.item.id)}
+            >
+                delete
+            </button>
         </div>
     )
 }
