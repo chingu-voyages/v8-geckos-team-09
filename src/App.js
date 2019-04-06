@@ -11,7 +11,6 @@ import "./App.css";
 
 class App extends React.Component {
   constructor() {
-<<<<<<< HEAD
     super()
     
     let d = new Date()
@@ -24,19 +23,6 @@ class App extends React.Component {
       }
     this.setBackground = this.setBackground.bind(this)  
     this.countingSecond = this.countingSecond.bind(this)
-=======
-    super();
-
-    let d = new Date();
-    this.state = {
-      day: d.getDay(),
-      month: d.getMonth(),
-      date: d.getDate(),
-      year: d.getFullYear(),
-      time: d.toLocaleTimeString()
-    };
-    this.countingSecond = this.countingSecond.bind(this);
->>>>>>> upstream/dev
   }
 
   backgrounds = [
@@ -100,21 +86,11 @@ class App extends React.Component {
     ];
 
     return (
-<<<<<<< HEAD
       <div className="App" style = {this.divStyle}>
         <div className='clock-container'>
           <h2 className='clock-time'>{this.state.time}</h2>
           <h3 className='clock-date'>{days[this.state.day]}, {months[this.state.month]} {this.state.date}, {this.state.year}</h3>
           <button onClick={this.setBackground}>change background</button>
-=======
-      <div className="App">
-        <div className="clock-container">
-          <h2 className="clock-time">{this.state.time}</h2>
-          <h3 className="clock-date">
-            {days[this.state.day]}, {months[this.state.month]} {this.state.date}
-            , {this.state.year}
-          </h3>
->>>>>>> upstream/dev
         </div>
         <Todos />
         <Quote />
