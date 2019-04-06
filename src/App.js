@@ -1,8 +1,9 @@
-import React from 'react';
-import Clock from './components/Clock';
-import Quote from './components/Quote';
-import Weather from './components/Weather';
-import './App.css';
+import React from "react";
+import Clock from "./components/Clock";
+import Quote from "./components/Quote";
+import Weather from "./components/WeatherApiCall";
+
+import "./App.css";
 
 class App extends React.Component {
   render() {
