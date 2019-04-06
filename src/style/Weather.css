@@ -2,7 +2,7 @@
   border: 2px solid blue;
 }*/
 .w3-card-4 {
-  position: absolute;
+  position: relative;
 }
 .w3-row {
   cursor: pointer;
