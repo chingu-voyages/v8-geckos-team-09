@@ -41,7 +41,7 @@ componentDidMount() {
       } else {
       	return(
       		<div>
-          	<p>{contents.quotes[0].quote}</p>
+          	<p>"{contents.quotes[0].quote}"  - {contents.quotes[0].author} </p>
           	</div>
         
       		);
