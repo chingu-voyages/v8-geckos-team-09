@@ -19,10 +19,13 @@ class App extends React.Component {
         month: d.getMonth(),
         date: d.getDate(),
         year: d.getFullYear(),
-        time: d.toLocaleTimeString()
+        time: d.toLocaleTimeString(),
+        divStyle: {
+          backgroundImage: "url(https://cdn.pixabay.com/photo/2018/08/12/15/29/hintersee-3601004_960_720.jpg)"
+        }
       }
-    this.setBackground = this.setBackground.bind(this)  
-    this.countingSecond = this.countingSecond.bind(this)
+    this.countingSecond = this.countingSecond.bind(this);
+    this.setBackground = this.setBackground.bind(this);
   }
 
   backgrounds = [
@@ -35,17 +38,21 @@ class App extends React.Component {
     "https://cdn.pixabay.com/photo/2016/10/26/19/36/nature-1772432_960_720.jpg",
     "https://cdn.pixabay.com/photo/2018/12/26/15/07/stykkisholmur-3895953_960_720.jpg"
   ]
-
-  randomBackground = this.backgrounds[Math.floor(Math.random() * 8)];
-
-  divStyle = {
-    backgroundImage: `url(${this.randomBackground})`
-  };
-
-  setBackground() {
-    console.log("change background bro")
+  setBackground(){
     
+    let d = Math.floor(Math.random() * 8);
+    let z = this.backgrounds[d];
+
+    console.log(d);
+    console.log(z);
+
+    let divStyle = {...this.state.divStyle}
+    divStyle.backgroundImage = `url(${z})`
+
+    this.setState({divStyle})
   }
+
+  
   
   countingSecond() {
     let d = new Date();
@@ -86,7 +93,7 @@ class App extends React.Component {
     ];
 
     return (
-      <div className="App" style = {this.divStyle}>
+      <div className="App" style = {this.state.divStyle}>
         <div className='clock-container'>
           <h2 className='clock-time'>{this.state.time}</h2>
           <h3 className='clock-date'>{days[this.state.day]}, {months[this.state.month]} {this.state.date}, {this.state.year}</h3>

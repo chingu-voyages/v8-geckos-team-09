@@ -2,3 +2,13 @@
     display: inline-block;
     padding-right: 5px;
 }
+
+.remove-button {
+    background: none;
+    border: 1px red solid;
+    border-radius: 50px;
+    color: red;
+    font-size: 12px;
+    line-height: 16px;
+    padding-right: 6px;
+}

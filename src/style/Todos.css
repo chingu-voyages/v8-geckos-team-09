@@ -1,6 +1,21 @@
 .todos-container {
-    border: 1px solid red;
     position: absolute;
     bottom: 0;
     right: 0;
+    padding: 10px;
+}
+
+.todo-input {
+    background: none;
+    color: white;
+    border: none;
+}
+
+.todo-button {
+    background: none;
+    border: 2px white solid;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
 }
