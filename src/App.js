@@ -55,7 +55,7 @@ class App extends React.Component {
       time: d.toLocaleTimeString()
     });
   }
-  
+
   componentWillMount() {
     setInterval(this.countingSecond, 1000);
   }
@@ -86,10 +86,10 @@ class App extends React.Component {
 
     return (
       <div className="App" style = {this.state.divStyle}>
+        <button className="background-button" onClick={this.setBackground}>change background</button>
         <div className='clock-container'>
           <h2 className='clock-time'>{this.state.time}</h2>
           <h3 className='clock-date'>{days[this.state.day]}, {months[this.state.month]} {this.state.date}, {this.state.year}</h3>
-          <button onClick={this.setBackground}>change background</button>
         </div>
         <Todos />
         <Quote />
