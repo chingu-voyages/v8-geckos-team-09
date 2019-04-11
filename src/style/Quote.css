@@ -1,3 +1,7 @@
 .quote-container {
-    color: blue;
+    position: absolute;
+    bottom: 100px;
+    padding: 0 250px 0 250px;
+    text-align: center;
+    width: 100%;
 }

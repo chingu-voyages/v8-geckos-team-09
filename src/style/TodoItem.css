@@ -1,5 +1,6 @@
 .todo-item {
     padding: 2px 5px 2px 5px;
+    background-color: rgba(0,0,0, 0.1);
 }
 
 .todo-element {
@@ -11,7 +12,7 @@
 .remove-button {
     background-color: transparent;
     border: none;
-    color: darkgrey;
+    color: lightgrey;
     line-height: 17px;
     padding-right: 6px;
     margin: 0 5px 0 5px;
