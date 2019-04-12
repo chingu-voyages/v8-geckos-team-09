@@ -1,9 +1,26 @@
 .App {
   height: 100vh;
-  background-image: url("./background_sample.jpg");
   background-size: cover;
   color: white;
   font-family: arial;
+}
+
+.background-button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background-color: transparent;
+  margin: 0;
+  border: none;
+  color: #DCDCDC;
+}
+
+.background-button:hover {
+  color: white;
+}
+
+.background-button:active {
+  color: red;
 }
 
 .clock-container {

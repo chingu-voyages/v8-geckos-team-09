@@ -22,10 +22,10 @@ function TodoItem(props) {
                 {props.item.text}
             </p>
             <button
-                className="todo-element"
+                className="todo-element remove-button"
                 onClick={() => props.deleteTodo(props.item.id)}
             >
-                delete
+            x
             </button>
         </div>
     )
