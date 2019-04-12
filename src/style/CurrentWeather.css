@@ -1,0 +1,10 @@
+.current-weather {
+    font-size: 2rem;
+    margin: 0;
+    float: left;
+}
+
+.current-temp {
+    font-size: 1.2rem;
+    margin: 0;
+}

@@ -8,8 +8,7 @@ const Weather = props => {
   return props.forecast.map((cast, idx) => {
     return (
       <div
-        className="w3-card-4 w3-margin "
-        style={{ width: 50 + "%" }}
+        className="weather-container"
         key={idx}
       >
         <CurrentWeather

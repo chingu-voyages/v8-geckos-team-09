@@ -2,6 +2,7 @@ import React from "react";
 import Moment from "react-moment";
 import moment from "moment";
 import Draggable from "react-draggable";
+import '../style/FutureForcast.css';
 
 const FutureWeather = props => {
   const {
@@ -20,7 +21,7 @@ const FutureWeather = props => {
   } = props;
   return (
     <Draggable>
-      <div className="w3-row">
+      <div className="forcast">
         <div className="w3-third w3-center">
           <h3>
             <Moment format="ddd">{moment.unix(day1).utc()}</Moment>
@@ -30,12 +31,12 @@ const FutureWeather = props => {
           <p>
             {" "}
             L: {minTemp1}
-            <sup>0</sup>
+            <sup>°</sup>
           </p>
           <p>
             {" "}
             H: {maxTemp1}
-            <sup>0</sup>
+            <sup>°</sup>
           </p>
         </div>
         <div className="w3-third w3-center">
@@ -46,12 +47,12 @@ const FutureWeather = props => {
           <p>
             {" "}
             L: {minTemp2}
-            <sup>0</sup>
+            <sup>°</sup>
           </p>
           <p>
             {" "}
             H: {maxTemp2}
-            <sup>0</sup>
+            <sup>°</sup>
           </p>
         </div>
         <div className="w3-third w3-center w3-margin-bottom">
@@ -62,12 +63,12 @@ const FutureWeather = props => {
           <p>
             {" "}
             L: {minTemp3}
-            <sup>0</sup>
+            <sup>°</sup>
           </p>
           <p>
             {" "}
             H: {maxTemp3}
-            <sup>0</sup>
+            <sup>°</sup>
           </p>
         </div>
       </div>
