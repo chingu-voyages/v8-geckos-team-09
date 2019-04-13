@@ -23,11 +23,11 @@ const FutureWeather = props => {
     <Draggable>
       <div className="forcast">
         <div className="w3-third w3-center">
-          <h3>
+          <h3 className="days">
             <Moment format="ddd">{moment.unix(day1).utc()}</Moment>
           </h3>
 
-          <img src={icon1} alt="sun" style={{ width: 80 + "px" }} />
+          <img src={icon1} alt="sun" style={{ width: 60 + "px" }} />
           <p>
             {" "}
             L: {minTemp1}
@@ -40,10 +40,10 @@ const FutureWeather = props => {
           </p>
         </div>
         <div className="w3-third w3-center">
-          <h3>
+          <h3 className="days">
             <Moment format="ddd">{moment.unix(day2).utc()}</Moment>
           </h3>
-          <img src={icon2} alt="cloud" style={{ width: 80 + "px" }} />
+          <img src={icon2} alt="cloud" style={{ width: 60 + "px" }} />
           <p>
             {" "}
             L: {minTemp2}
@@ -56,10 +56,10 @@ const FutureWeather = props => {
           </p>
         </div>
         <div className="w3-third w3-center w3-margin-bottom">
-          <h3>
+          <h3 className="days">
             <Moment format="ddd">{moment.unix(day3).utc()}</Moment>
           </h3>
-          <img src={icon3} alt="clouds" style={{ width: 80 + "px" }} />
+          <img src={icon3} alt="clouds" style={{ width: 60 + "px" }} />
           <p>
             {" "}
             L: {minTemp3}
