@@ -5,3 +5,11 @@
     text-align: center;
     width: 100%;
 }
+
+@media only screen and (max-width: 850px) {
+    .quote-container {
+      position: static;
+      width: 100%;
+      padding: 0;
+  }
+}
