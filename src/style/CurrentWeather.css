@@ -1,0 +1,17 @@
+.current-weather {
+    font-size: 2rem;
+    margin: 0;
+    float: left;
+}
+
+.current-temp {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+@media only screen and (max-width: 850px) {
+    .current-weather {
+        text-align: center;
+        float: none;
+    }
+}

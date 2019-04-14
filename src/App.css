@@ -5,18 +5,23 @@
   font-family: arial;
 }
 
+.app-inner {
+  background-color: rgba(0,0,0,0.1);
+  height: 100vh;
+}
+
 .background-button {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  bottom: 40px;
+  left: 40px;
   background-color: transparent;
   margin: 0;
   border: none;
-  color: #DCDCDC;
+  color: white;
 }
 
 .background-button:hover {
-  color: white;
+  color: grey;
 }
 
 .background-button:active {
@@ -28,10 +33,8 @@
   position: absolute;
   margin: auto;
   top: 0;
-  right: 0;
   bottom: 0;
-  left: 0;
-  width: 600px;
+  width: 100%;
   height: 100px;
 }
 
@@ -40,7 +43,23 @@
   margin: 0;
 }
 
-.clock-date {
-  font-size: 2.2rem;
+.greeting {
+  font-size: 3rem;
   margin: 0;
+}
+
+@media only screen and (max-width: 850px) {
+  .background-button {
+    position: static;
+    width: 100%;
+  }
+  .clock-container {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .greeting {
+    position: static;
+    width: 100%;
+  }
 }

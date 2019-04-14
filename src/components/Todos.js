@@ -60,10 +60,14 @@ class Todos extends React.Component {
         return(
             <div className='todos-container'>
                 <h4 className="todos-heading">Todos</h4>
+                <div className="todo-items">
                 {todoItems}
+                </div>
                 <form className="todo-form" onSubmit={this.addTodo}>
-                    <input className="todo-input" type="text" ref="search" placeholder="add todo..."></input>
-                    <button className="todo-button">+</button>
+                    <div className="input-container">
+                        <input className="todo-input" type="text" ref="search" placeholder="add todo..."></input>
+                        <button className="todo-button">+</button>
+                    </div>
                 </form>
             </div>
         )

@@ -3,7 +3,7 @@
     bottom: 20px;
     right: 0;
     width: 250px;
-    background-color: #404040;
+    background-color: transparent;
 }
 
 .todos-heading {
@@ -16,16 +16,37 @@
     width: 100%;
 }
 .todo-input {
-    background: #282828;
+    background: rgba(0,0,0,0.3);
     color: #DCDCDC;
     border: none;
     padding-left: 5px;
-    width: 226px;
+    width: 225px;
 }
 
 .todo-button {
-    background: #202020;
+    background: rgba(0,0,0,0.5);
     border: none;
     color: #DCDCDC;
     line-height: 21px;
+}
+
+.todo-button:hover {
+    background: rgba(0,0,0,0.7);
+}
+
+@media only screen and (max-width: 850px) {
+    .todos-container {
+      position: static;
+      width: 100%;
+  }
+    .input-container {
+      margin: 0 auto;
+      width: 250px;
+    }
+
+    .todo-items {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }

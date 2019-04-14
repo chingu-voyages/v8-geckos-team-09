@@ -1,9 +1,7 @@
-/* {
-  border: 2px solid blue;
-}*/
-.w3-card-4 {
-  position: relative;
+.weather-container {
+  width: 100%;
+  padding: 40px;
 }
-.w3-row {
+.weather-row {
   cursor: pointer;
 }
