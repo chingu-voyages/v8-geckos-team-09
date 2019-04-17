@@ -1,23 +1,27 @@
 .App {
+  margin: 0;
   height: 100vh;
   background-size: cover;
+  background-position: center;
   color: white;
   font-family: arial;
 }
 
 .app-inner {
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.2);
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 220px 2fr 2fr 1fr;
 }
 
 .background-button {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
   background-color: transparent;
-  margin: 0;
   border: none;
   color: white;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  margin: auto;
 }
 
 .background-button:hover {
@@ -29,37 +33,37 @@
 }
 
 .clock-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
   text-align: center;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
+  align-self: center;
+  justify-self: center;
+}
+
+.clock-container-inner {
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .clock-time {
   font-size: 6rem;
-  margin: 0;
 }
 
 .greeting {
   font-size: 3rem;
-  margin: 0;
 }
 
 @media only screen and (max-width: 850px) {
   .background-button {
-    position: static;
-    width: 100%;
   }
   .clock-container {
-    position: static;
-    width: 100%;
-    height: auto;
+  }
+  .clock-time {
   }
   .greeting {
-    position: static;
-    width: 100%;
   }
 }

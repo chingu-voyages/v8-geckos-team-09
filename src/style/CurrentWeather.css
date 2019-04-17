@@ -1,7 +1,7 @@
 .current-weather {
     font-size: 2rem;
-    margin: 0;
     float: left;
+    padding: 75px 0 75px 40px;
 }
 
 .current-temp {
@@ -11,7 +11,6 @@
 
 @media only screen and (max-width: 850px) {
     .current-weather {
-        text-align: center;
-        float: none;
+        
     }
 }

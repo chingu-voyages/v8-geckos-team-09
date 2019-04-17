@@ -1,0 +1,13 @@
+.forecast {
+    width: 300px;
+    float: right;
+}
+
+.days {
+}
+
+@media only screen and (max-width: 850px) {
+    .forecast {
+        
+    }
+}

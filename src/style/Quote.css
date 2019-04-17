@@ -1,15 +1,14 @@
 .quote-container {
-    position: absolute;
-    bottom: 100px;
-    padding: 0 250px 0 250px;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    padding: 10px;
     text-align: center;
-    width: 100%;
+    align-self: center;
+    justify-self: center;
 }
 
 @media only screen and (max-width: 850px) {
     .quote-container {
-      position: static;
-      width: 100%;
-      padding: 0;
+      
   }
 }
