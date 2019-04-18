@@ -35,10 +35,13 @@
     background: rgba(0,0,0,0.7);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 675px) {
     .todos-container {
-      
-  }
+        grid-column: 1 / 5;
+        grid-row: 4 / 5;
+        width: 300px;
+        margin: 20px auto;
+    }
     .input-container {
       
     }

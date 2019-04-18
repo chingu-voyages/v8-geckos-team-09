@@ -57,10 +57,23 @@
   font-size: 3rem;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 675px) {
+  .App {
+    height: auto;
+    min-height: 100vh;
+  }
+  .app-inner {
+    height: auto;
+    min-height: 100vh;
+    grid-template-rows: 112px 2fr 1fr auto 1fr;
+  }
   .background-button {
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
   }
   .clock-container {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
   }
   .clock-time {
   }
