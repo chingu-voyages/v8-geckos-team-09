@@ -1,9 +1,9 @@
 import React from "react";
-
 import Quote from "./components/Quote";
 import Weather from "./components/WeatherApiCall";
 import Todos from "./components/Todos";
 import "./App.css";
+
 import AAA from "./backgrounds/aaa.jpg";
 import BBB from "./backgrounds/bbb.jpg";
 import CCC from "./backgrounds/ccc.jpg";
@@ -77,13 +77,15 @@ class App extends React.Component {
       <div className="App" style = {this.state.divStyle}>
         <main className="app-inner">
           <button className="background-button" onClick={this.setBackground}>change background</button>
-          <div className='clock-container'>
-            <h2 className='clock-time'>{this.state.time}</h2>
-            <h2 className='greeting'>{this.state.greeting}!</h2>
-          </div>
+          <Weather />
+          <ul className='clock-container'>
+            <div className='clock-container-inner'>
+              <li className='clock-time'>{this.state.time}</li>
+              <li className='greeting'>{this.state.greeting}!</li>
+            </div>
+          </ul>
           <Quote />
           <Todos />
-          <Weather />
         </main>
       </div>
     );
