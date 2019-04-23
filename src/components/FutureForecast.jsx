@@ -2,6 +2,7 @@ import React from "react";
 import Moment from "react-moment";
 import moment from "moment";
 import Draggable from "react-draggable";
+import '../style/FutureForecast.css';
 
 const FutureWeather = props => {
   const {
@@ -20,54 +21,54 @@ const FutureWeather = props => {
   } = props;
   return (
     <Draggable>
-      <div className="w3-row">
+      <div className="forecast">
         <div className="w3-third w3-center">
-          <h3>
+          <h3 className="days">
             <Moment format="ddd">{moment.unix(day1).utc()}</Moment>
           </h3>
 
-          <img src={icon1} alt="sun" style={{ width: 80 + "px" }} />
+          <img src={icon1} alt="sun" style={{ width: 60 + "px" }} />
           <p>
             {" "}
             L: {minTemp1}
-            <sup>0</sup>
+            <sup>°</sup>
           </p>
           <p>
             {" "}
             H: {maxTemp1}
-            <sup>0</sup>
+            <sup>°</sup>
           </p>
         </div>
         <div className="w3-third w3-center">
-          <h3>
+          <h3 className="days">
             <Moment format="ddd">{moment.unix(day2).utc()}</Moment>
           </h3>
-          <img src={icon2} alt="cloud" style={{ width: 80 + "px" }} />
+          <img src={icon2} alt="cloud" style={{ width: 60 + "px" }} />
           <p>
             {" "}
             L: {minTemp2}
-            <sup>0</sup>
+            <sup>°</sup>
           </p>
           <p>
             {" "}
             H: {maxTemp2}
-            <sup>0</sup>
+            <sup>°</sup>
           </p>
         </div>
         <div className="w3-third w3-center w3-margin-bottom">
-          <h3>
+          <h3 className="days">
             <Moment format="ddd">{moment.unix(day3).utc()}</Moment>
           </h3>
-          <img src={icon3} alt="clouds" style={{ width: 80 + "px" }} />
+          <img src={icon3} alt="clouds" style={{ width: 60 + "px" }} />
           <p>
             {" "}
             L: {minTemp3}
-            <sup>0</sup>
+            <sup>°</sup>
           </p>
           <p>
             {" "}
             H: {maxTemp3}
-            <sup>0</sup>
+            <sup>°</sup>
           </p>
         </div>
       </div>

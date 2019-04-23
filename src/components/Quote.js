@@ -40,9 +40,9 @@ componentDidMount() {
       	return <div>Loading...</div>;
       } else {
       	return(
-      		<div>
+      		<div className="quote-container">
           	<p>"{contents.quotes[0].quote}"  - {contents.quotes[0].author} </p>
-          	</div>
+          </div>
         
       		);
 
